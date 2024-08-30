@@ -228,3 +228,4 @@ loader.sce
 vcpkg.json
 CMakePresets.json
 .cache
+.vscode
