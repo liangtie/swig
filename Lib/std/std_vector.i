@@ -78,7 +78,7 @@ namespace std {
 	template <>  struct traits<std::vector< _Tp, _Alloc > > {
 	  typedef pointer_category category;
 	  static const char* type_name() {
-	    return "std::vector<" #_Tp "," #_Alloc " >";
+	    return "typename std::vector<" #_Tp "," #_Alloc " >";
 	  }
 	};
       }
@@ -119,7 +119,7 @@ namespace std {
 	template <>  struct traits<std::vector< _Tp*, _Alloc > > {
 	  typedef value_category category;
 	  static const char* type_name() {
-	    return "std::vector<" #_Tp " *," #_Alloc " >";
+	    return "typename std::vector<" #_Tp " *," #_Alloc " >";
 	  }
 	};
       }
@@ -159,7 +159,7 @@ namespace std {
 	template <>  struct traits<std::vector< _Tp const*, _Alloc > > {
 	  typedef value_category category;
 	  static const char* type_name() {
-	    return "std::vector<" #_Tp " const*," #_Alloc " >";
+	    return "typename std::vector<" #_Tp " const*," #_Alloc " >";
 	  }
 	};
       }
